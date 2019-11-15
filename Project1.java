@@ -11,7 +11,7 @@
 
 public class Project1 {
   public static void main(String[] args) 
-  {/*
+  {
     // Instantiate Primes Class
     PrimeOperations testOne = new PrimeOperations();
     
@@ -31,7 +31,7 @@ public class Project1 {
     testThree.generateTwinPrimes();
     testThree.generateHexPrimes();
     testThree.printHexes();
-    */
+    
     
     /************************My Test Cases are Below****************************************/
     /*
@@ -52,7 +52,7 @@ public class Project1 {
     myTestTwo.printHexes();
     
     PrimeOperations myTestThree = new PrimeOperations();
-    myTestThree.generatePrimes(10001);
+    myTestThree.generatePrimes(10000);
     myTestThree.printPrimes();
     myTestThree.generateTwinPrimes();
     myTestThree.printTwins();

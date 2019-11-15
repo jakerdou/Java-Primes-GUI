@@ -12,8 +12,6 @@ import java.math.BigInteger;
  * 
  *************************************************************/
 
-//FIXME to do: upload files to github, send github repo link to someone to make sure it works, test more thoroughly, delete FIXME comments
-
 /*
  *  Desc: This class generates primes, twin primes, and hexagon crosses using BigInteger data types.
  */
@@ -103,12 +101,14 @@ public class PrimeOperations {
   // Generate and store a list of primes.
   public void generatePrimes(int count)
   { 
+    primeArray.clear();
+    
     //base case
     if(count == 0) {
       return;
     } else {
-      //first prime number will always be one
-      BigInteger primeToAdd = new BigInteger("1");
+      //first prime number will always be two
+      BigInteger primeToAdd = new BigInteger("2");
       
       for(int i = 0; i < count; i++) {
         //add prime to list then generate the next prime
@@ -121,6 +121,8 @@ public class PrimeOperations {
   // Generate and store a list of twin primes.
   public void generateTwinPrimes()
   {
+    twinArray.clear();
+    
     BigInteger bigTwo = new BigInteger("2");
     
     for(int i = 0; i < primeArray.size() - 1; i++) {
@@ -140,6 +142,8 @@ public class PrimeOperations {
   // Generate and store the hexagon crosses, along with the two twin primes that generate the hexagon cross.
   public void generateHexPrimes()
   {
+    hexArray.clear();
+    
     BigInteger bigOne = new BigInteger("1");
     
     for(int i = 0; i < twinArray.size() - 1; i++) {
